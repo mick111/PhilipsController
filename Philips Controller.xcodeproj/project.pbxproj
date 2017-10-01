@@ -20,6 +20,21 @@
 		41B21EAE1F802DB6004013A5 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EA81F802DA9004013A5 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41B21ECA1F802F2F004013A5 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EC11F802EAD004013A5 /* Crypto.framework */; };
 		41B21ECB1F802F2F004013A5 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EC11F802EAD004013A5 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41B21EDF1F80BEA9004013A5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B21EDD1F80BEA9004013A5 /* Interface.storyboard */; };
+		41B21EE11F80BEA9004013A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B21EE01F80BEA9004013A5 /* Assets.xcassets */; };
+		41B21EE81F80BEA9004013A5 /* PhilipsControllerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 41B21EE71F80BEA9004013A5 /* PhilipsControllerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		41B21EED1F80BEA9004013A5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B21EEC1F80BEA9004013A5 /* InterfaceController.swift */; };
+		41B21EEF1F80BEA9004013A5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B21EEE1F80BEA9004013A5 /* ExtensionDelegate.swift */; };
+		41B21EF11F80BEA9004013A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B21EF01F80BEA9004013A5 /* Assets.xcassets */; };
+		41B21EF51F80BEA9004013A5 /* PhilipsControllerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 41B21EDB1F80BEA9004013A5 /* PhilipsControllerWatch.app */; };
+		41B21EFE1F80BFE6004013A5 /* PCCredentialsHTTPDigest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CD01F8025470095403B /* PCCredentialsHTTPDigest.swift */; };
+		41B21EFF1F80C004004013A5 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EC51F802EAD004013A5 /* Crypto.framework */; };
+		41B21F001F80C004004013A5 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EC51F802EAD004013A5 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41B21F031F80C004004013A5 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EAA1F802DA9004013A5 /* CommonCrypto.framework */; };
+		41B21F041F80C004004013A5 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EAA1F802DA9004013A5 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41B21F081F80C0C8004013A5 /* PCPhilipsCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CCE1F7D7E670095403B /* PCPhilipsCommunicator.swift */; };
+		41BC8F9E1F80F126009CE81C /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BC8F961F80F126009CE81C /* KeychainPasswordItem.swift */; };
+		41BC8F9F1F80F126009CE81C /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BC8F961F80F126009CE81C /* KeychainPasswordItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +143,34 @@
 			remoteGlobalIDString = 21FD8C5A1AE6B03F008DCDBA;
 			remoteInfo = "Crypto-iOS";
 		};
+		41B21EE91F80BEA9004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 410A6C951F7D77330095403B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41B21EE61F80BEA9004013A5;
+			remoteInfo = "PhilipsControllerWatch Extension";
+		};
+		41B21EF31F80BEA9004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 410A6C951F7D77330095403B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41B21EDA1F80BEA9004013A5;
+			remoteInfo = PhilipsControllerWatch;
+		};
+		41B21F011F80C004004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 804503361BA20F37002A5470;
+			remoteInfo = "Crypto-watchOS";
+		};
+		41B21F051F80C004004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 804503271BA209F6002A5470;
+			remoteInfo = "CommonCrypto-watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -139,6 +182,40 @@
 			files = (
 				41B21EAE1F802DB6004013A5 /* CommonCrypto.framework in Embed Frameworks */,
 				41B21ECB1F802F2F004013A5 /* Crypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B21EF91F80BEA9004013A5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				41B21EE81F80BEA9004013A5 /* PhilipsControllerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B21EFD1F80BEA9004013A5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				41B21EF51F80BEA9004013A5 /* PhilipsControllerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B21F071F80C004004013A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41B21F041F80C004004013A5 /* CommonCrypto.framework in Embed Frameworks */,
+				41B21F001F80C004004013A5 /* Crypto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +240,16 @@
 		410A6CD01F8025470095403B /* PCCredentialsHTTPDigest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PCCredentialsHTTPDigest.swift; path = PhilipsController/PCCredentialsHTTPDigest.swift; sourceTree = "<group>"; };
 		41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonCrypto.xcodeproj; path = "CommonCrypto-master/CommonCrypto.xcodeproj"; sourceTree = "<group>"; };
 		41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Crypto.xcodeproj; path = "Crypto-master/Crypto.xcodeproj"; sourceTree = "<group>"; };
+		41B21EDB1F80BEA9004013A5 /* PhilipsControllerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhilipsControllerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B21EDE1F80BEA9004013A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		41B21EE01F80BEA9004013A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41B21EE21F80BEA9004013A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B21EE71F80BEA9004013A5 /* PhilipsControllerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PhilipsControllerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B21EEC1F80BEA9004013A5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		41B21EEE1F80BEA9004013A5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		41B21EF01F80BEA9004013A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41B21EF21F80BEA9004013A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BC8F961F80F126009CE81C /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +276,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41B21EE41F80BEA9004013A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B21F031F80C004004013A5 /* CommonCrypto.framework in Frameworks */,
+				41B21EFF1F80C004004013A5 /* Crypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -197,9 +293,12 @@
 			children = (
 				410A6CD01F8025470095403B /* PCCredentialsHTTPDigest.swift */,
 				410A6CCE1F7D7E670095403B /* PCPhilipsCommunicator.swift */,
+				41BC8F961F80F126009CE81C /* KeychainPasswordItem.swift */,
 				410A6C9F1F7D77330095403B /* PhilipsController */,
 				410A6CB41F7D77330095403B /* PhilipsControllerTests */,
 				410A6CBF1F7D77330095403B /* PhilipsControllerUITests */,
+				41B21EDC1F80BEA9004013A5 /* PhilipsControllerWatch */,
+				41B21EEB1F80BEA9004013A5 /* PhilipsControllerWatch Extension */,
 				410A6C9E1F7D77330095403B /* Products */,
 				41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */,
 				41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */,
@@ -212,6 +311,8 @@
 				410A6C9D1F7D77330095403B /* Philips Controller.app */,
 				410A6CB11F7D77330095403B /* Philips ControllerTests.xctest */,
 				410A6CBC1F7D77330095403B /* Philips ControllerUITests.xctest */,
+				41B21EDB1F80BEA9004013A5 /* PhilipsControllerWatch.app */,
+				41B21EE71F80BEA9004013A5 /* PhilipsControllerWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +373,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		41B21EDC1F80BEA9004013A5 /* PhilipsControllerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				41B21EDD1F80BEA9004013A5 /* Interface.storyboard */,
+				41B21EE01F80BEA9004013A5 /* Assets.xcassets */,
+				41B21EE21F80BEA9004013A5 /* Info.plist */,
+			);
+			path = PhilipsControllerWatch;
+			sourceTree = "<group>";
+		};
+		41B21EEB1F80BEA9004013A5 /* PhilipsControllerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				41B21EEC1F80BEA9004013A5 /* InterfaceController.swift */,
+				41B21EEE1F80BEA9004013A5 /* ExtensionDelegate.swift */,
+				41B21EF01F80BEA9004013A5 /* Assets.xcassets */,
+				41B21EF21F80BEA9004013A5 /* Info.plist */,
+			);
+			path = "PhilipsControllerWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,12 +405,14 @@
 				410A6C9A1F7D77330095403B /* Frameworks */,
 				410A6C9B1F7D77330095403B /* Resources */,
 				41B21EB11F802DB6004013A5 /* Embed Frameworks */,
+				41B21EFD1F80BEA9004013A5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				41B21EB01F802DB6004013A5 /* PBXTargetDependency */,
 				41B21ECD1F802F2F004013A5 /* PBXTargetDependency */,
+				41B21EF41F80BEA9004013A5 /* PBXTargetDependency */,
 			);
 			name = "Philips Controller";
 			productName = "Philips Controller";
@@ -331,6 +455,43 @@
 			productReference = 410A6CBC1F7D77330095403B /* Philips ControllerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		41B21EDA1F80BEA9004013A5 /* PhilipsControllerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B21EFA1F80BEA9004013A5 /* Build configuration list for PBXNativeTarget "PhilipsControllerWatch" */;
+			buildPhases = (
+				41B21ED91F80BEA9004013A5 /* Resources */,
+				41B21EF91F80BEA9004013A5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41B21EEA1F80BEA9004013A5 /* PBXTargetDependency */,
+			);
+			name = PhilipsControllerWatch;
+			productName = PhilipsControllerWatch;
+			productReference = 41B21EDB1F80BEA9004013A5 /* PhilipsControllerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		41B21EE61F80BEA9004013A5 /* PhilipsControllerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B21EF61F80BEA9004013A5 /* Build configuration list for PBXNativeTarget "PhilipsControllerWatch Extension" */;
+			buildPhases = (
+				41B21EE31F80BEA9004013A5 /* Sources */,
+				41B21EE41F80BEA9004013A5 /* Frameworks */,
+				41B21EE51F80BEA9004013A5 /* Resources */,
+				41B21F071F80C004004013A5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41B21F021F80C004004013A5 /* PBXTargetDependency */,
+				41B21F061F80C004004013A5 /* PBXTargetDependency */,
+			);
+			name = "PhilipsControllerWatch Extension";
+			productName = "PhilipsControllerWatch Extension";
+			productReference = 41B21EE71F80BEA9004013A5 /* PhilipsControllerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,6 +516,14 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 410A6C9C1F7D77330095403B;
+					};
+					41B21EDA1F80BEA9004013A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					41B21EE61F80BEA9004013A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -384,6 +553,8 @@
 				410A6C9C1F7D77330095403B /* Philips Controller */,
 				410A6CB01F7D77330095403B /* Philips ControllerTests */,
 				410A6CBB1F7D77330095403B /* Philips ControllerUITests */,
+				41B21EDA1F80BEA9004013A5 /* PhilipsControllerWatch */,
+				41B21EE61F80BEA9004013A5 /* PhilipsControllerWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -493,6 +664,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41B21ED91F80BEA9004013A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B21EE11F80BEA9004013A5 /* Assets.xcassets in Resources */,
+				41B21EDF1F80BEA9004013A5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B21EE51F80BEA9004013A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B21EF11F80BEA9004013A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -500,6 +688,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BC8F9E1F80F126009CE81C /* KeychainPasswordItem.swift in Sources */,
 				410A6CA31F7D77330095403B /* PCViewController.swift in Sources */,
 				410A6CD11F8025470095403B /* PCCredentialsHTTPDigest.swift in Sources */,
 				410A6CCF1F7D7E670095403B /* PCPhilipsCommunicator.swift in Sources */,
@@ -520,6 +709,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				410A6CC11F7D77330095403B /* Philips_ControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B21EE31F80BEA9004013A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BC8F9F1F80F126009CE81C /* KeychainPasswordItem.swift in Sources */,
+				41B21EEF1F80BEA9004013A5 /* ExtensionDelegate.swift in Sources */,
+				41B21EED1F80BEA9004013A5 /* InterfaceController.swift in Sources */,
+				41B21EFE1F80BFE6004013A5 /* PCCredentialsHTTPDigest.swift in Sources */,
+				41B21F081F80C0C8004013A5 /* PCPhilipsCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +747,26 @@
 			name = "Crypto-iOS";
 			targetProxy = 41B21ECC1F802F2F004013A5 /* PBXContainerItemProxy */;
 		};
+		41B21EEA1F80BEA9004013A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41B21EE61F80BEA9004013A5 /* PhilipsControllerWatch Extension */;
+			targetProxy = 41B21EE91F80BEA9004013A5 /* PBXContainerItemProxy */;
+		};
+		41B21EF41F80BEA9004013A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41B21EDA1F80BEA9004013A5 /* PhilipsControllerWatch */;
+			targetProxy = 41B21EF31F80BEA9004013A5 /* PBXContainerItemProxy */;
+		};
+		41B21F021F80C004004013A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Crypto-watchOS";
+			targetProxy = 41B21F011F80C004004013A5 /* PBXContainerItemProxy */;
+		};
+		41B21F061F80C004004013A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CommonCrypto-watchOS";
+			targetProxy = 41B21F051F80C004004013A5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -563,6 +784,14 @@
 				410A6CAA1F7D77330095403B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		41B21EDD1F80BEA9004013A5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B21EDE1F80BEA9004013A5 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -773,6 +1002,80 @@
 			};
 			name = Release;
 		};
+		41B21EF71F80BEA9004013A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLZ5M6CBUE;
+				INFOPLIST_FILE = "PhilipsControllerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.mick111.PhilipsController.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		41B21EF81F80BEA9004013A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLZ5M6CBUE;
+				INFOPLIST_FILE = "PhilipsControllerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.mick111.PhilipsController.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		41B21EFB1F80BEA9004013A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLZ5M6CBUE;
+				IBSC_MODULE = PhilipsControllerWatch_Extension;
+				INFOPLIST_FILE = PhilipsControllerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.mick111.PhilipsController.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		41B21EFC1F80BEA9004013A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLZ5M6CBUE;
+				IBSC_MODULE = PhilipsControllerWatch_Extension;
+				INFOPLIST_FILE = PhilipsControllerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.mick111.PhilipsController.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -808,6 +1111,24 @@
 			buildConfigurations = (
 				410A6CCC1F7D77330095403B /* Debug */,
 				410A6CCD1F7D77330095403B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B21EF61F80BEA9004013A5 /* Build configuration list for PBXNativeTarget "PhilipsControllerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B21EF71F80BEA9004013A5 /* Debug */,
+				41B21EF81F80BEA9004013A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B21EFA1F80BEA9004013A5 /* Build configuration list for PBXNativeTarget "PhilipsControllerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B21EFB1F80BEA9004013A5 /* Debug */,
+				41B21EFC1F80BEA9004013A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

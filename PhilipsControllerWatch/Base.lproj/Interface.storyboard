@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PhilipsControllerWatch" customModuleProvider="target">
+                    <items>
+                        <slider width="1" alignment="left" continuous="YES" value="1" maximum="6" steps="6" id="U72-Nq-KhT">
+                            <connections>
+                                <action selector="sliderDidChanged:" destination="AgC-eL-Hgc" id="D75-Op-4Nf"/>
+                            </connections>
+                        </slider>
+                        <picker height="100" alignment="left" focusStyle="stack" id="HsW-7h-30n">
+                            <connections>
+                                <action selector="pickerDidSelect:" destination="AgC-eL-Hgc" id="Ikp-7I-T91"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Off" id="b1U-09-JgK"/>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="HsW-7h-30n" id="yf0-sN-Zyo"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

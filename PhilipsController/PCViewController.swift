@@ -9,6 +9,8 @@
 import UIKit
 extension PCViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 
+
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return communicator.cmds.count
     }
@@ -42,6 +44,13 @@ extension PCViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 class PCViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
 
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var ha1: UITextField!
+    @IBAction func saveHa1(_ sender: Any) {
+        if let ha1 = ha1.text, let username = username.text {
+        communicator.save(password: ha1, for: username)
+        }
+    }
 
     @IBOutlet weak var response: UITextView!
     let communicator = PCPhilipsCommunicator()

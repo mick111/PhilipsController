@@ -10,9 +10,9 @@ import UIKit
 import Crypto
 
 class PCHTTPDigest: NSObject {
-    static var countNonces : [String: Int] = [:]
+    static var countNonces: [String: Int] = [:]
 
-    static func auth(infos: [String:String], password: String) -> String? {
+    static func auth(infos: [String:String], ha1: String) -> String? {
         guard let userid = infos["username"],
             let realm = infos["realm"],
             let uri = infos["uri"],
@@ -22,7 +22,7 @@ class PCHTTPDigest: NSObject {
                 return nil
         }
 
-        let nc : String
+        let nc: String
         if let count = countNonces[nonce] {
             nc = String(format: "%08x",count)
         } else {
@@ -32,8 +32,6 @@ class PCHTTPDigest: NSObject {
 
         let cnonce = String(format: "%08x",arc4random()) + String(format: "%08x", arc4random())
 
-        let s1 = [userid, realm, password].joined(separator: ":")
-        guard let ha1 = s1.md5 else { return nil }
         let s2 = [method, uri].joined(separator: ":")
         guard let ha2 = s2.md5 else { return nil }
         let s3 = [ha1, nonce, nc, cnonce, qop, ha2].joined(separator: ":")

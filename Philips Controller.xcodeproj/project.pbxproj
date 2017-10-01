@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		410A6CA11F7D77330095403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CA01F7D77330095403B /* AppDelegate.swift */; };
-		410A6CA31F7D77330095403B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CA21F7D77330095403B /* ViewController.swift */; };
+		410A6CA11F7D77330095403B /* PCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CA01F7D77330095403B /* PCAppDelegate.swift */; };
+		410A6CA31F7D77330095403B /* PCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CA21F7D77330095403B /* PCViewController.swift */; };
 		410A6CA61F7D77330095403B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410A6CA41F7D77330095403B /* Main.storyboard */; };
 		410A6CA81F7D77330095403B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410A6CA71F7D77330095403B /* Assets.xcassets */; };
 		410A6CAB1F7D77330095403B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410A6CA91F7D77330095403B /* LaunchScreen.storyboard */; };
 		410A6CB61F7D77330095403B /* Philips_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CB51F7D77330095403B /* Philips_ControllerTests.swift */; };
 		410A6CC11F7D77330095403B /* Philips_ControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CC01F7D77330095403B /* Philips_ControllerUITests.swift */; };
+		410A6CCF1F7D7E670095403B /* PCPhilipsCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CCE1F7D7E670095403B /* PCPhilipsCommunicator.swift */; };
+		410A6CD11F8025470095403B /* PCCredentialsHTTPDigest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A6CD01F8025470095403B /* PCCredentialsHTTPDigest.swift */; };
+		41B21EAD1F802DB6004013A5 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EA81F802DA9004013A5 /* CommonCrypto.framework */; };
+		41B21EAE1F802DB6004013A5 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EA81F802DA9004013A5 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41B21ECA1F802F2F004013A5 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EC11F802EAD004013A5 /* Crypto.framework */; };
+		41B21ECB1F802F2F004013A5 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B21EC11F802EAD004013A5 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +37,118 @@
 			remoteGlobalIDString = 410A6C9C1F7D77330095403B;
 			remoteInfo = "Philips Controller";
 		};
+		41B21EA51F802DA9004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 211216831AE68D26004E1CE6;
+			remoteInfo = "CommonCrypto-macOS";
+		};
+		41B21EA71F802DA9004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 216CAE341AE6B273009A69EF;
+			remoteInfo = "CommonCrypto-iOS";
+		};
+		41B21EA91F802DA9004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 804503281BA209F6002A5470;
+			remoteInfo = "CommonCrypto-watchOS";
+		};
+		41B21EAB1F802DA9004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80098A511C12E5890029C530;
+			remoteInfo = "CommonCrypto-tvOS";
+		};
+		41B21EAF1F802DB6004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 216CAE331AE6B273009A69EF;
+			remoteInfo = "CommonCrypto-iOS";
+		};
+		41B21EBC1F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2112163D1AE68AD2004E1CE6;
+			remoteInfo = "Crypto-macOS";
+		};
+		41B21EBE1F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 211216481AE68AD3004E1CE6;
+			remoteInfo = "CryptoTests-macOS";
+		};
+		41B21EC01F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21FD8C5B1AE6B03F008DCDBA;
+			remoteInfo = "Crypto-iOS";
+		};
+		41B21EC21F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21FD8C651AE6B03F008DCDBA;
+			remoteInfo = "CryptoTests-iOS";
+		};
+		41B21EC41F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 804503371BA20F37002A5470;
+			remoteInfo = "Crypto-watchOS";
+		};
+		41B21EC61F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80098A6F1C12E87D0029C530;
+			remoteInfo = "Crypto-tvOS";
+		};
+		41B21EC81F802EAD004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80098A781C12E87D0029C530;
+			remoteInfo = "CryptoTests-tvOS";
+		};
+		41B21ECC1F802F2F004013A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FD8C5A1AE6B03F008DCDBA;
+			remoteInfo = "Crypto-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41B21EB11F802DB6004013A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41B21EAE1F802DB6004013A5 /* CommonCrypto.framework in Embed Frameworks */,
+				41B21ECB1F802F2F004013A5 /* Crypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		410A6C9D1F7D77330095403B /* Philips Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		410A6CA01F7D77330095403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		410A6CA21F7D77330095403B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		410A6CA01F7D77330095403B /* PCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCAppDelegate.swift; sourceTree = "<group>"; };
+		410A6CA21F7D77330095403B /* PCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCViewController.swift; sourceTree = "<group>"; };
 		410A6CA51F7D77330095403B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		410A6CA71F7D77330095403B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410A6CAA1F7D77330095403B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +159,10 @@
 		410A6CBC1F7D77330095403B /* Philips ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410A6CC01F7D77330095403B /* Philips_ControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_ControllerUITests.swift; sourceTree = "<group>"; };
 		410A6CC21F7D77330095403B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410A6CCE1F7D7E670095403B /* PCPhilipsCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPhilipsCommunicator.swift; sourceTree = "<group>"; };
+		410A6CD01F8025470095403B /* PCCredentialsHTTPDigest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PCCredentialsHTTPDigest.swift; path = PhilipsController/PCCredentialsHTTPDigest.swift; sourceTree = "<group>"; };
+		41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonCrypto.xcodeproj; path = "CommonCrypto-master/CommonCrypto.xcodeproj"; sourceTree = "<group>"; };
+		41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Crypto.xcodeproj; path = "Crypto-master/Crypto.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B21EAD1F802DB6004013A5 /* CommonCrypto.framework in Frameworks */,
+				41B21ECA1F802F2F004013A5 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +195,14 @@
 		410A6C941F7D77330095403B = {
 			isa = PBXGroup;
 			children = (
-				410A6C9F1F7D77330095403B /* Philips Controller */,
-				410A6CB41F7D77330095403B /* Philips ControllerTests */,
-				410A6CBF1F7D77330095403B /* Philips ControllerUITests */,
+				410A6CD01F8025470095403B /* PCCredentialsHTTPDigest.swift */,
+				410A6CCE1F7D7E670095403B /* PCPhilipsCommunicator.swift */,
+				410A6C9F1F7D77330095403B /* PhilipsController */,
+				410A6CB41F7D77330095403B /* PhilipsControllerTests */,
+				410A6CBF1F7D77330095403B /* PhilipsControllerUITests */,
 				410A6C9E1F7D77330095403B /* Products */,
+				41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */,
+				41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,35 +216,60 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		410A6C9F1F7D77330095403B /* Philips Controller */ = {
+		410A6C9F1F7D77330095403B /* PhilipsController */ = {
 			isa = PBXGroup;
 			children = (
-				410A6CA01F7D77330095403B /* AppDelegate.swift */,
-				410A6CA21F7D77330095403B /* ViewController.swift */,
+				410A6CA01F7D77330095403B /* PCAppDelegate.swift */,
+				410A6CA21F7D77330095403B /* PCViewController.swift */,
 				410A6CA41F7D77330095403B /* Main.storyboard */,
 				410A6CA71F7D77330095403B /* Assets.xcassets */,
 				410A6CA91F7D77330095403B /* LaunchScreen.storyboard */,
 				410A6CAC1F7D77330095403B /* Info.plist */,
 			);
-			path = "Philips Controller";
+			path = PhilipsController;
 			sourceTree = "<group>";
 		};
-		410A6CB41F7D77330095403B /* Philips ControllerTests */ = {
+		410A6CB41F7D77330095403B /* PhilipsControllerTests */ = {
 			isa = PBXGroup;
 			children = (
 				410A6CB51F7D77330095403B /* Philips_ControllerTests.swift */,
 				410A6CB71F7D77330095403B /* Info.plist */,
 			);
-			path = "Philips ControllerTests";
+			path = PhilipsControllerTests;
 			sourceTree = "<group>";
 		};
-		410A6CBF1F7D77330095403B /* Philips ControllerUITests */ = {
+		410A6CBF1F7D77330095403B /* PhilipsControllerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				410A6CC01F7D77330095403B /* Philips_ControllerUITests.swift */,
 				410A6CC21F7D77330095403B /* Info.plist */,
 			);
-			path = "Philips ControllerUITests";
+			path = PhilipsControllerUITests;
+			sourceTree = "<group>";
+		};
+		41B21E9F1F802DA8004013A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B21EA61F802DA9004013A5 /* CommonCrypto.framework */,
+				41B21EA81F802DA9004013A5 /* CommonCrypto.framework */,
+				41B21EAA1F802DA9004013A5 /* CommonCrypto.framework */,
+				41B21EAC1F802DA9004013A5 /* CommonCrypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41B21EB31F802EAD004013A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B21EBD1F802EAD004013A5 /* Crypto.framework */,
+				41B21EBF1F802EAD004013A5 /* CryptoTests-macOS.xctest */,
+				41B21EC11F802EAD004013A5 /* Crypto.framework */,
+				41B21EC31F802EAD004013A5 /* CryptoTests-iOS.xctest */,
+				41B21EC51F802EAD004013A5 /* Crypto.framework */,
+				41B21EC71F802EAD004013A5 /* Crypto.framework */,
+				41B21EC91F802EAD004013A5 /* CryptoTests-tvOS.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,10 +282,13 @@
 				410A6C991F7D77330095403B /* Sources */,
 				410A6C9A1F7D77330095403B /* Frameworks */,
 				410A6C9B1F7D77330095403B /* Resources */,
+				41B21EB11F802DB6004013A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41B21EB01F802DB6004013A5 /* PBXTargetDependency */,
+				41B21ECD1F802F2F004013A5 /* PBXTargetDependency */,
 			);
 			name = "Philips Controller";
 			productName = "Philips Controller";
@@ -187,6 +337,7 @@
 		410A6C951F7D77330095403B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PC;
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Michael Mouchous";
@@ -218,6 +369,16 @@
 			mainGroup = 410A6C941F7D77330095403B;
 			productRefGroup = 410A6C9E1F7D77330095403B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 41B21E9F1F802DA8004013A5 /* Products */;
+					ProjectRef = 41B21E9E1F802DA8004013A5 /* CommonCrypto.xcodeproj */;
+				},
+				{
+					ProductGroup = 41B21EB31F802EAD004013A5 /* Products */;
+					ProjectRef = 41B21EB21F802EAD004013A5 /* Crypto.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				410A6C9C1F7D77330095403B /* Philips Controller */,
@@ -226,6 +387,86 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		41B21EA61F802DA9004013A5 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 41B21EA51F802DA9004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EA81F802DA9004013A5 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 41B21EA71F802DA9004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EAA1F802DA9004013A5 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 41B21EA91F802DA9004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EAC1F802DA9004013A5 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 41B21EAB1F802DA9004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EBD1F802EAD004013A5 /* Crypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Crypto.framework;
+			remoteRef = 41B21EBC1F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EBF1F802EAD004013A5 /* CryptoTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CryptoTests-macOS.xctest";
+			remoteRef = 41B21EBE1F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EC11F802EAD004013A5 /* Crypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Crypto.framework;
+			remoteRef = 41B21EC01F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EC31F802EAD004013A5 /* CryptoTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CryptoTests-iOS.xctest";
+			remoteRef = 41B21EC21F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EC51F802EAD004013A5 /* Crypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Crypto.framework;
+			remoteRef = 41B21EC41F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EC71F802EAD004013A5 /* Crypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Crypto.framework;
+			remoteRef = 41B21EC61F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B21EC91F802EAD004013A5 /* CryptoTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CryptoTests-tvOS.xctest";
+			remoteRef = 41B21EC81F802EAD004013A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		410A6C9B1F7D77330095403B /* Resources */ = {
@@ -259,8 +500,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410A6CA31F7D77330095403B /* ViewController.swift in Sources */,
-				410A6CA11F7D77330095403B /* AppDelegate.swift in Sources */,
+				410A6CA31F7D77330095403B /* PCViewController.swift in Sources */,
+				410A6CD11F8025470095403B /* PCCredentialsHTTPDigest.swift in Sources */,
+				410A6CCF1F7D7E670095403B /* PCPhilipsCommunicator.swift in Sources */,
+				410A6CA11F7D77330095403B /* PCAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +535,16 @@
 			isa = PBXTargetDependency;
 			target = 410A6C9C1F7D77330095403B /* Philips Controller */;
 			targetProxy = 410A6CBD1F7D77330095403B /* PBXContainerItemProxy */;
+		};
+		41B21EB01F802DB6004013A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CommonCrypto-iOS";
+			targetProxy = 41B21EAF1F802DB6004013A5 /* PBXContainerItemProxy */;
+		};
+		41B21ECD1F802F2F004013A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Crypto-iOS";
+			targetProxy = 41B21ECC1F802F2F004013A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,12 +678,13 @@
 		410A6CC61F7D77330095403B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LLZ5M6CBUE;
-				INFOPLIST_FILE = "Philips Controller/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PhilipsController/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.mick111.Philips-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.mick111.PhilipsController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,12 +694,13 @@
 		410A6CC71F7D77330095403B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LLZ5M6CBUE;
-				INFOPLIST_FILE = "Philips Controller/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PhilipsController/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.mick111.Philips-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.mick111.PhilipsController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
